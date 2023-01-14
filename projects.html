@@ -14,7 +14,6 @@
             color: #777;
             line-height: 1.8;
         }
-
         body {
             background-image: url('images/clateral_animation_wave_deep_light_bg.gif');
             background-position: center;
@@ -23,21 +22,21 @@
             background-repeat: no-repeat;
             min-height: 100%;
         }
-
-        .intro_div_logo {
-            width: 100px;
-            height: 100px;
-            background-color: transparent;
-            position: relative;
-            animation-name: intro_logo;
-            animation-duration: 2s;
-        }
-
         @media only screen and (max-device-width: 1600px) {
-            .intro_div_logo {
+            body {
                 background-attachment: scroll;
                 min-height: 400px;
             }
+
+            .intro_div_logo {
+                width: 100px;
+                height: 100px;
+                background-color: transparent;
+                position: relative;
+                animation-name: intro_logo;
+                animation-duration: 2s;
+            }
+
 
             @keyframes intro_logo {
                 0% {
