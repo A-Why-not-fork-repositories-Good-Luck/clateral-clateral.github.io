@@ -20,7 +20,7 @@
             background-repeat: no-repeat;
             min-height: 100%;
         }*/
-        div {
+        .intro_div_logo {
             width: 100px;
             height: 100px;
             background-color: transparent;
@@ -28,9 +28,18 @@
             animation-name: intro_logo;
             animation-duration: 2s;
         }
+        .intro_div_text {
+            width: 100px;
+            height: 100px;
+            background-color: transparent;
+            position: relative;
+            animation-name: intro_text;
+            animation-duration: 2s;
+        }
+     
 
-        @keyframes intro_logo {
-            0% {
+            @keyframes intro_logo {
+                0% {
                 background-color: transparent;
                 left: 0px;
                 top: 0px;
@@ -60,15 +69,27 @@
                 top: 0px;
             }
         }
+        @keyframes intro_text {
+            100% {
+                background-color: transparent;
+                right: 100px;
+                top: 0px;
+            }
+        }
+
     </style>
 
 </head>
 <body>
- <div>
-     <img src="images/clateral_Logo_Resized.png"/>
- </div>
-       
+    <div class="intro_div_logo">
+        <img src="images/clateral_Logo_Resized.png" />
+    </div>
+
+    <div class="intro_div_text" style="color:black">
+        <h2>Welcome</h2>
+    </div>
     
+
     <header>
     </header>
 
