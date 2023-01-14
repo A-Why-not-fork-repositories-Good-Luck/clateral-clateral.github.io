@@ -9,12 +9,7 @@
 
     <title>projects</title>
     <style>
-        body, html {
-            height: 100%;
-            color: #777;
-            line-height: 1.8;
-        }
-
+      
         body {
             background-image: url('images/clateral_animation_wave_deep_light_bg.gif');
             background-position: center;
@@ -23,6 +18,14 @@
             background-repeat: no-repeat;
             min-height: 100%;
         }
+        @media only screen and (max-device-width: 1600px) {
+            body {
+                background-attachment: scroll;
+                min-height: 400px;
+            }
+        }
+
+
         .intro_div_logo {
             width: 100px;
             height: 100px;
@@ -63,12 +66,7 @@
             }
         }
 
-        @media only screen and (max-device-width: 1600px) {
-            .intro_div_logo {
-                background-attachment: scroll;
-                min-height: 400px;
-            }
-        }
+       
     </style>
 </head>
 
