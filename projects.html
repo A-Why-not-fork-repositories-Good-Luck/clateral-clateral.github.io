@@ -35,40 +35,44 @@
             animation-name: intro_text;
             animation-duration: 2s;
         }*/
-
-
-        @keyframes intro_logo {
-            0% {
-                background-color: transparent;
-                left: 0px;
-                top: 0px;
+        @media only screen and (max-device-width: 1600px) {
+            .intro_div_logo {
+                background-attachment: scroll;
+                min-height: 400px;
             }
 
-            25% {
-                background-color: transparent;
-                left: 200px;
-                top: 0px;
-            }
+            @keyframes intro_logo {
+                0% {
+                    background-color: transparent;
+                    left: 0px;
+                    top: 0px;
+                }
 
-            50% {
-                background-color: transparent;
-                left: 200px;
-                top: 200px;
-            }
+                25% {
+                    background-color: transparent;
+                    left: 200px;
+                    top: 0px;
+                }
 
-            75% {
-                background-color: transparent;
-                left: 0px;
-                top: 200px;
-            }
+                50% {
+                    background-color: transparent;
+                    left: 200px;
+                    top: 200px;
+                }
 
-            100% {
-                background-color: transparent;
-                left: 0px;
-                top: 0px;
+                75% {
+                    background-color: transparent;
+                    left: 0px;
+                    top: 200px;
+                }
+
+                100% {
+                    background-color: transparent;
+                    left: 0px;
+                    top: 0px;
+                }
             }
-        }
-        /*   @keyframes intro_text {
+            /*   @keyframes intro_text {
             0% {
                 background-color: transparent;
                 right: 0px;
