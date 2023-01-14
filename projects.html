@@ -9,6 +9,11 @@
 
     <title>projects</title>
     <style>
+        body, html {
+            height: 100%;
+            color: #777;
+            line-height: 1.8;
+        }
 
         body {
             background-image: url('images/clateral_animation_wave_deep_light_bg.gif');
@@ -27,18 +32,11 @@
             animation-name: intro_logo;
             animation-duration: 2s;
         }
-        /*  .intro_div_text {
-            width: 200px;
-            height: 200px;
-            background-color: transparent;
-            position: relative;
-            animation-name: intro_text;
-            animation-duration: 2s;
-        }*/
+
         @media only screen and (max-device-width: 1600px) {
             .intro_div_logo {
                 background-attachment: scroll;
-                min-height: 400px;
+                min-height: 100px;
             }
 
             @keyframes intro_logo {
@@ -72,50 +70,18 @@
                     top: 0px;
                 }
             }
-            /*   @keyframes intro_text {
-            0% {
-                background-color: transparent;
-                right: 0px;
-                top: 0px;
-            }
-            100% {
-                background-color: transparent;
-                right: 200px;
-                top: 200px;
-            }
-        }*/
-
+        }
     </style>
-
 </head>
+
 <body>
-
-
-   
-        <div class="intro_div_logo">
-            <a href="/projects">
-                <img src="images/clateral_Logo_Resized.png" alt="clateral logo"style="width:contain;height:contain;"/>
-
-            </a>
-        </div>
-
-        <!--<div class="intro_div_text">-->
-        <!--k--><!--style="float: right; color: black">-->
-        <!--<h2>Welcome</h2>
-        </div>-->
-
-
-        <header>
-        </header>
-
-
-        <!--<div class="sidenav">
-            <a href="#">Link</a>
-            <a href="#">Link</a>
-            <a href="#">Link</a>
-        </div>-->
+    <div class="intro_div_logo">
+        <a href="/projects">
+            <img src="images/clateral_Logo_Resized.png" alt="clateral logo" style="width:contain;height:contain;"/>
+        </a>
+    </div>
 </body>
 
 </html>
 
-<!--Update-->
+
