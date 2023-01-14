@@ -22,11 +22,7 @@
             background-repeat: no-repeat;
             min-height: 100%;
         }
-        @media only screen and (max-device-width: 1600px) {
-            body {
-                background-attachment: scroll;
-                min-height: 400px;
-            }
+       
 
             .intro_div_logo {
                 width: 100px;
@@ -36,6 +32,10 @@
                 animation-name: intro_logo;
                 animation-duration: 2s;
             }
+            @media only screen and (max-device-width: 1600px) {
+            .intro_div_logo {
+                    min-height: 400px;
+                }
 
 
             @keyframes intro_logo {
