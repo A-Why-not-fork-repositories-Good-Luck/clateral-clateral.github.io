@@ -9,20 +9,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.bgimg-1 {
-    background-image: url("images/clateral_Logo_animation.gif");
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    min-height: 100%;
-}
 
-@media only screen and (max-device-width: 1600px) {
-    .bgimg-1 {
-        background-attachment: scroll;
-        min-height: 400px;
-    }
 
     /* Style the side navigation */
     .sidenav {
