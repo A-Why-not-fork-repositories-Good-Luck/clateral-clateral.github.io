@@ -40,7 +40,7 @@ body {
     padding-left: 20px;
 }
 
-.button {
+/*.button {
     border: none;
     color: white;
     padding: 15px 32px;
@@ -50,10 +50,10 @@ body {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-}
+}*/
 
 /* Green */
-.button {
+/*.button {
     border: none;
     color: white;
     padding: 16px 32px;
@@ -86,4 +86,4 @@ body {
     .button2:hover {
         background-color: #008CBA;
         color: white;
-    }
+    }*/
