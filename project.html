@@ -56,6 +56,12 @@
                 top: 0px;
             }
         }
+        .button_event a:hover {
+            background-color: #f1f1f1
+        }
+        .show {
+            display: block;
+        }
     </style>
 </head>
 
@@ -64,10 +70,34 @@
         <a href="/project">
             <img src="images/clateral_Logo_Resized.png" alt="clateral logo" style="width: fit-content; height: fit-content;" />
         </a>
-        <button onclick="document.location='/project'" style="background-color:darkgrey">Click Me</button>
+        <div class="button_event">
+            <button id="button1" class="button1"> click here</button>
+            <button class="button button1">Green</button>
+            <div id="button_trigger" class="button_event">
+                <a href="/project"></a>
+            </div>
+        </div>
     </div>
    
+            
+
+
+            <script>
+                // Get the button, and when the user clicks on it, execute myFunction
+                document.getElementById("button1").onclick = function () { myFunction() };
+
+                /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+                function myFunction() {
+                    document.getElementById("button_trigger").classList.toggle("show");
+                }
+            </script>
+
+
+
+
 </body>
+
+
 
 </html>
 
