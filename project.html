@@ -26,16 +26,20 @@
                 min-height: 400px;
             }
         }*/
-
-
-        .intro_div_logo {
-            width: 200px;
-            height: 100px;
-            background-color: transparent;
+        .container {
             position: relative;
-            animation-name: intro_logo;
-            animation-duration: 1s;
+            width: 100%;
+            max-width: 400px;
         }
+
+            .container .intro_div_logo {
+                width: 200px;
+                height: 100px;
+                background-color: transparent;
+                position: relative;
+                animation-name: intro_logo;
+                animation-duration: 1s;
+            }
 
         @keyframes intro_logo {
             0% {
@@ -56,26 +60,48 @@
                 top: 0px;
             }
         }
+
+        .container .btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-color: #f1f1f1;
+            color: black;
+            font-size: 16px;
+            padding: 16px 30px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+            .container .btn:hover {
+                background-color: black;
+                color: white;
+            }
     </style>
 </head>
 
 <body>
-    <div class="intro_div_logo">
-        <a href="/project">
-            <img src="images/clateral_Logo_Resized.png" alt="clateral logo" style="width: fit-content; height: fit-content;" />
+    <div class="container">
+        <div class="intro_div_logo">
+            <a href="/project">
+                <img src="images/clateral_Logo_Resized.png" alt="clateral logo" style="width: fit-content; height: fit-content;" />
 
-        </a>
+            </a>
+            <button class="btn">Button</button>
 
-        <div style="margin-left:200px;float:right">     
-                <button onclick="document.location='/project'" style="border: 2px solid black; background-color: #f4511e; border: none; color: white; padding: 16px 32px;text-align: center; font-size: 16px;">Click me</button>
         </div>
-
     </div>
 </body>
 </html>
 
 
-
+<!--<div style="margin-left:200px;float:right">
+    <button onclick="document.location='/project'" style="border: 2px solid black; background-color: #f4511e; border: none; color: white; padding: 16px 32px;text-align: center; font-size: 16px;">Click me</button>
+</div>-->
 <!--<button onclick="document.location='/project'" style="border: 2px solid black; background-color: #f4511e; border: none; color: white; padding: 16px 32px; padding-right: 16px 32px;
       text-align: center; font-size: 16px; margin: 4px 2px; opacity: 0.6; transition: 0.3s; float: right; margin-left: 200px; text-decoration: none; cursor: pointer;">
     Click me
@@ -129,12 +155,6 @@ padding-right: 20px; padding-bottom: 20px; padding-left: 20px; float: inline-end
 
     </body>
 </html>-->
-
-
-
-
-
-
 <!--<button onclick="myFunction()">Click me</button>
 
       <p id="demo"></p>
