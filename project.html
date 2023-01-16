@@ -87,6 +87,20 @@
             margin: 5px;
         }
 
+        * {
+            box-sizing: border-box;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+        }
 
 
         /* For mobile phones: */
