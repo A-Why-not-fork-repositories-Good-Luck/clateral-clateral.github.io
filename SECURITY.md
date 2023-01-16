@@ -11,6 +11,6 @@
 
 ## Reporting a Vulnerability
 
-To report a vulnerability, appreciated contact: clateral.client@outlook.com
+To report a vulnerability, appreciated contact me.
 
 
