@@ -10,6 +10,11 @@
             box-sizing: border-box;
         }
 
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
         .row::after {
             content: "";
             clear: both;
@@ -135,7 +140,7 @@
 <body>
     <h2>Iframe - Target for a Link</h2>
 
-    <iframe src="index.html" name="iframe_a" style="height:max-content; width:max-content" title="Iframe Example"></iframe>
+    <iframe src="index.html" name="iframe_a" style="height:100%; width:100%" title="Iframe Example"></iframe>
     <!--style="border:none"-->
     <!--height="300px" width="100%-->
     <p><a href="https://www.clateral.com" target="iframe_a">clateral.com</a></p>
