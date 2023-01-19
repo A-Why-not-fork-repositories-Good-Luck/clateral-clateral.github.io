@@ -63,18 +63,39 @@
             </ul>
         </div>
     </nav>
+
+    <video id="myVideo" width="320" height="176" playsinline style="pointer-events: none;">
+        <source src="images/clateral_animation_wave_deep_white.mp4" type="video/mp4">
+    </video>
+
+    <script>
+        var vid = document.getElementById("myVideo");
+        vid.autoplay = true;
+        vid.loop = true;
+        vid.load();
+
+        //var vid = document.getElementById("myVideo");
+        //function(){
+        //    vid.autoplay = true;
+        //    vid.loop = true;
+        //    vid.load();
+        //}
+     
+    </script>
+
+
     <!--ratio ratio-4x3-->
-    <div class="container p-5 my-5 mt-5">
+    <!--<div class="container p-5 my-5 mt-5">
         <div class="ratio ratio-4x3">
-            <embed type="video/mp4" src="images/clateral_animation_wave_deep_white.mp4" >
+            <embed type="video/mp4" src="images/clateral_animation_wave_deep_white.mp4">-->
             <!--<video autoplay loop playsinline style="pointer-events: none;">
                 <iframe src="images/clateral_animation_wave_deep_white.mp4" itemtype="http://schema.org/Movie">
 
                     <source src="images/clateral_animation_wave_deep_white.mp4" type="video/mp4">
                 </iframe>-->
             <!--</video>-->
-        </div>
-    </div>
+        <!--</div>
+    </div>-->
 
 
     <!--<video autoplay playsinline style="pointer-events: none;"></video>-->
@@ -630,21 +651,21 @@
         window.onload = removeControls(video);
 
 
-                                //var x = document.getElementById("myVideo").loop =true;
+                                    //var x = document.getElementById("myVideo").loop =true;
 
-                                //function enableLoop() {
-                                //    x.loop = true;
-                                //    x.load();
-                                //}
+                                    //function enableLoop() {
+                                    //    x.loop = true;
+                                    //    x.load();
+                                    //}
 
-                                //function disableLoop() {
-                                //    x.loop = false;
-                                //    x.load();
-                                //}
+                                    //function disableLoop() {
+                                    //    x.loop = false;
+                                    //    x.load();
+                                    //}
 
-                                //function checkLoop() {
-                                //    alert(x.loop);
-                                //}
+                                    //function checkLoop() {
+                                    //    alert(x.loop);
+                                    //}
     </script>
 
 </body>
