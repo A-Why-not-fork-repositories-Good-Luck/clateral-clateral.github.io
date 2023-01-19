@@ -70,6 +70,7 @@
 
     <script>
         var vid = document.getElementById("myVideo");
+      /*  HTMLVideoElement.*/
         vid.autoplay = true;
         vid.loop = true;
         vid.load();
@@ -85,17 +86,17 @@
 
 
     <!--ratio ratio-4x3-->
-    <!--<div class="container p-5 my-5 mt-5">
+    <!--<div class="container p-5 my-5 mt-5">-->
         <div class="ratio ratio-4x3">
-            <embed type="video/mp4" src="images/clateral_animation_wave_deep_white.mp4">-->
-            <!--<video autoplay loop playsinline style="pointer-events: none;">
-                <iframe src="images/clateral_animation_wave_deep_white.mp4" itemtype="http://schema.org/Movie">
+            <!--<embed type="video/mp4" src="images/clateral_animation_wave_deep_white.mp4">-->
+            <video id="myVideo" autoplay loop playsinline style="pointer-events: none;">
+                <iframe src="images/clateral_animation_wave_deep_white.mp4" type="video/mp4">
 
-                    <source src="images/clateral_animation_wave_deep_white.mp4" type="video/mp4">
-                </iframe>-->
-            <!--</video>-->
-        <!--</div>
-    </div>-->
+                    <!--<source src="images/clateral_animation_wave_deep_white.mp4" type="video/mp4">-->
+                </iframe>
+            </video>
+        </div>
+    <!--</div>-->
 
 
     <!--<video autoplay playsinline style="pointer-events: none;"></video>-->
