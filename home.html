@@ -69,7 +69,7 @@
     </nav>
 
 
-        <video controls autoplay loop>
+        <video controls autoplay loop id="video">
             <source src="images/clateral_animation_wave_deep_white.mp4" type="video/mp4">
         </video>
     
@@ -621,21 +621,28 @@
 
 
     <script>
-        var x = document.getElementById("myVideo").loop =true;
+        var video = getElementsByTagName('video').loop = true;
+        function removeControls(video) {
+            video.removeAttribute('controls');
+        }
+        window.onload = removeControls(video);
+
+
+        //var x = document.getElementById("myVideo").loop =true;
         
-        function enableLoop() {
-            x.loop = true;
-            x.load();
-        }
+        //function enableLoop() {
+        //    x.loop = true;
+        //    x.load();
+        //}
 
-        function disableLoop() {
-            x.loop = false;
-            x.load();
-        }
+        //function disableLoop() {
+        //    x.loop = false;
+        //    x.load();
+        //}
 
-        function checkLoop() {
-            alert(x.loop);
-        }
+        //function checkLoop() {
+        //    alert(x.loop);
+        //}
     </script>
 
 </body>
