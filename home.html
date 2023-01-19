@@ -68,7 +68,7 @@
         </div>
     </nav>
 
-    <!--<script>
+    <script>
         var x = document.getElementById("myVideo");
 
         function enableLoop() {
@@ -84,12 +84,12 @@
         function checkLoop() {
             alert(x.loop);
         }
-    </script>-->
+    </script>
 
     <div class="ratio ratio-4x3">
-        <video autoplay loop>
+        <video id="myVideo">
             <!--playsinline style="pointer-events: none;"-->
-            <source src="images/clateral_animation_wave_deep_white.mp4" type="video/mp4">
+            <source src="images/clateral_animation_wave_deep_white.mp4" type="video/mp4" id="myVideo">
             <!--<source src="mov_bbb.ogg" type="video/ogg">-->
             <!--Your browser does not support HTML5 video.-->
         </video>
