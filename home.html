@@ -30,11 +30,13 @@
         <button type="button" class="btn btn-secondary bg-dark navbar-toggler" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+        <!--justify-content-center-->
+
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
 
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="/home">Home</a>
+                    <a class="nav-link " href="/home">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" href="/presentation">Presentation</a>
@@ -54,6 +56,45 @@
             </ul>
         </div>
     </nav>
+
+
+  
+    <div class="ratio ratio-4x3">
+        <iframe src="images/clateral_animation_wave_deep_white.mp4"></iframe>
+    </div>
+    <br>
+
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <video controls>
+                    <source src="images/clateral_animation_wave_deep_white.mp4" type="video/mp4">
+                    <!--<source src="mov_bbb.ogg" type="video/ogg">-->
+                    <!--Your browser does not support HTML5 video.-->
+                </video>
+                <!--<img src="la.jpg" alt="Los Angeles" class="d-block" style="width:100%">-->
+            </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <!--<button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>-->
+    </div>
+
+
+
 
     <div class="container p-5 my-5 mt-5 bg-black text-white">
         <h2>Presentation</h2>
