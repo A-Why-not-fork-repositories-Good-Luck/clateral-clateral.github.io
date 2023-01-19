@@ -15,7 +15,7 @@
         }
 
         video {
-            width: auto;
+            width: 420px;
             height: auto;
          /*   pointer-events: none;*/
             
@@ -68,23 +68,6 @@
         </div>
     </nav>
 
-    <script>
-        var x = document.getElementById("myVideo");
-
-        function enableLoop() {
-            x.loop = true;
-            x.load();
-        }
-
-        function disableLoop() {
-            x.loop = false;
-            x.load();
-        }
-
-        function checkLoop() {
-            alert(x.loop);
-        }
-    </script>
 
     <div class="ratio ratio-4x3">
         <video id="myVideo" autoplay>
@@ -97,36 +80,32 @@
     <br>
 
     <!--<video autoplay playsinline style="pointer-events: none;"></video>-->
-
     <!-- Carousel -->
     <!--<div id="demo" class="carousel slide" data-bs-ride="carousel">-->
+    <!-- Indicators/dots -->
+    <!--<div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    </div>-->
+    <!-- The slideshow/carousel -->
+    <!--<div class="carousel-inner">
+        <div class="carousel-item active">
 
-        <!-- Indicators/dots -->
-        <!--<div class="carousel-indicators">
-            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-        </div>-->
-
-        <!-- The slideshow/carousel -->
-        <!--<div class="carousel-inner">
-            <div class="carousel-item active">
-             
-                    <video autoplay loop controls>-->
-                    <!--playsinline style="pointer-events: none;"-->
-                    <!--<source src="images/clateral_animation_wave_deep_white.mp4" type="video/mp4">-->
-                    <!--<source src="mov_bbb.ogg" type="video/ogg">-->
-                    <!--Your browser does not support HTML5 video.-->
-                <!--</video>-->
-                <!--<img src="la.jpg" alt="Los Angeles" class="d-block" style="width:100%">-->
-            <!--</div>
-        </div>-->
-
-        <!-- Left and right controls/icons -->
-        <!--<button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </button>-->
+                <video autoplay loop controls>-->
+    <!--playsinline style="pointer-events: none;"-->
+    <!--<source src="images/clateral_animation_wave_deep_white.mp4" type="video/mp4">-->
+    <!--<source src="mov_bbb.ogg" type="video/ogg">-->
+    <!--Your browser does not support HTML5 video.-->
+    <!--</video>-->
+    <!--<img src="la.jpg" alt="Los Angeles" class="d-block" style="width:100%">-->
+    <!--</div>
+    </div>-->
+    <!-- Left and right controls/icons -->
+    <!--<button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>-->
     <!--</div>-->
 
 
@@ -643,5 +622,25 @@
     <div class="mt-5 p-5 bg-black text-white text-center">
         <p> copyright @ 2023 <a href="https://www.clateral.com" target="_blank" style="color:#3fa19e">clateral.com</a></p>
     </div>
+
+
+    <script>
+        var x = document.getElementById("myVideo");
+
+        function enableLoop() {
+            x.loop = true;
+            x.load();
+        }
+
+        function disableLoop() {
+            x.loop = false;
+            x.load();
+        }
+
+        function checkLoop() {
+            alert(x.loop);
+        }
+    </script>
+
 </body>
 </html>
