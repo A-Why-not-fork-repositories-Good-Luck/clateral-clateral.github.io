@@ -67,13 +67,14 @@
     </video>
 
     <script>
-        var vid = document.getElementById("myVideo");
+        var vid = document.getElementById('myVideo');
         /*  HTMLVideoElement.*/
         vid.autoplay = true;
         vid.loop = true;
         vid.removeControls = true;
         vid.load();
- 
+        vid.onload = removeControls('myVideo');
+        window.onload = vid.removeControls('myVideo');
     /*    vid.pointer-events = none;*/
         //var vid = document.getElementById("myVideo");
         //function(){
