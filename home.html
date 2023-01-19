@@ -12,13 +12,14 @@
             background-color: rgba(50, 50, 50, 0.6);
             background-image: linear-gradient(to left, rgba(50, 200, 200, 0.3), #3fa19e 70%);
             background-repeat: no-repeat;
+            background-attachment:fixed;
         }
         /*url('images/clateral_animation_wave_deep_white.mp4'); */
-        video {
+        /*video {*/
             /*       width: auto;
             height: auto;*/
-            pointer-events: none;
-        }
+            /*pointer-events: none;
+        }*/
         /*}*/
         /* video::-webkit-media-controls-start-playback-button {
                 display: none;
@@ -63,7 +64,7 @@
     </nav>
     <div class="ratio ratio-4x3">
         <!--width="320" height="176"-->
-        <video id="myVideo" width="640" height="352" playsinline style="pointer-events: none;">
+        <video id="myVideo" playsinline style="pointer-events: none;">
             <source src="images/clateral_animation_wave_deep_white.mp4" type="video/mp4">
         </video>
     </div>
